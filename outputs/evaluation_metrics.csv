@@ -1,0 +1,3 @@
+,AP score,Brier score
+Trained on feature set A,0.3634,0.1875
+Trained on feature set B,0.4608,0.174
