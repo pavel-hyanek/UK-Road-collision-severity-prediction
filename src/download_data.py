@@ -9,13 +9,12 @@ dirs = [PROJECT_ROOT / "data" / "raw_data", PROJECT_ROOT / "data" / "preprocesse
 for dir in dirs:
     dir.mkdir(parents=True, exist_ok=True)
 
-urls = ['https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-last-5-years.csv'
-        ,'https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-last-5-years.csv'
-        ,'https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-casualty-last-5-years.csv']
+urls = ['https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-last-5-years.csv',
+        'https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-last-5-years.csv']
 
-names = ['collision', 'vehicle', 'casualty']
+names = ['collision', 'vehicle']
 
-for i in range(3):
+for i in range(2):
     response = requests.get(urls[i])
     path = PROJECT_ROOT / ('data/raw_data/' + names[i] + '_raw.csv')
 
