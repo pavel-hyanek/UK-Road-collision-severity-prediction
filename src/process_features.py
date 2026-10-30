@@ -47,17 +47,11 @@ collision_columns_impute_and_encode = ["police_force", "date_month", "time_hour"
                      "speed_limit", "junction_detail", "second_road_class", "light_conditions", 
                        "weather_conditions", "road_surface_conditions", "urban_or_rural_area"]
 
-#collision_columns_impute_missing = ["junction_detail", "second_road_class", "road_surface_conditions"]
-
 collision_columns = ["collision_index", "severity", "VEHICLE_number_of_vehicles"]
 
 vehicle_columns_impute_and_encode = ["VEHICLE_vehicle_type", "VEHICLE_skidding_and_overturning", "VEHICLE_hit_object_in_carriageway",
                    "VEHICLE_hit_object_off_carriageway", "VEHICLE_vehicle_leaving_carriageway", 
                    "VEHICLE_vehicle_manoeuvre", "VEHICLE_first_point_of_impact"]
-
-#vehicle_columns_impute_missing = ["VEHICLE_skidding_and_overturning", "VEHICLE_hit_object_in_carriageway",
-#                                  "VEHICLE_hit_object_off_carriageway", "VEHICLE_vehicle_leaving_carriageway",
-#                                  "VEHICLE_vehicle_manoeuvre", "VEHICLE_first_point_of_impact"]
 
 vehicle_columns = ["collision_index"]
 

@@ -38,11 +38,6 @@ def evaluate_models(model_A, model_B, X_test_A=X_test_A,
        model_A_brier_score = brier_score_loss(y_test, model_A_pred_proba)
        model_B_brier_score = brier_score_loss(y_test, model_B_pred_proba)
 
-       #print(f"Average precision scores of random forest classifier models: \n Trained on feature set A: {round(model_A_avg_prec_sc, 4)}" +
-       #       f"\n Trained on feature set B: {round(model_B_avg_prec_sc, 4)}"+
-       #       f"Brier scores of random forest classifier models: \n Trained on feature set A: {round(model_A_brier_score, 4)}" +
-       #       f"\n Trained on feature set B: {round(model_B_brier_score, 4)}")
-
        precisions_model_A, recalls_model_A, thresholds_model_A = precision_recall_curve(y_test, model_A_pred_proba)
        precisions_model_B, recalls_model_B, thresholds_model_B = precision_recall_curve(y_test, model_B_pred_proba)
 
